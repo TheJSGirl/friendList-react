@@ -1,0 +1,13 @@
+.Friend {
+    border: 2px solid black;
+    background: lightblue;
+}
+.name {
+    color: green
+}
+.hobby {
+    color: red
+}
+.social {
+    color: blueviolet
+}
