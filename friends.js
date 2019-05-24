@@ -1,8 +1,10 @@
 class Friend extends React.Component{
+    static defaultProps = {
+        name: "Anonymous"
+    }
 
     render() {
        const {name, hobby, socialLinks} = this.props;
-       console.log(this.props.name)
       return (  
       <div>
           <h2>{name}</h2>
