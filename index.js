@@ -3,19 +3,37 @@ class App extends React.Component {
     render() {
         const friendData = [
             { name: "Aku",
-                socialLinks: "https://github.com/thejsgirl",
-                hobby: "cricket"}, 
+                socialLinks: [
+                    {
+                        github: "https://github.com/thejsgirl",
+                        linkedIn: "https://github.com/thejsgirl"
+                    }
+                ],
+                hobby: ["cricket", "badminton", "tenis"]}, 
                 
-                { name: "Aku",
-                socialLinks: "https://github.com/thejsgirl",
-                hobby: "cricket"},
-
-                { name: "Aku",
-                socialLinks: "https://github.com/thejsgirl",
-                hobby: "cricket"}
+                { name: "anup",
+                socialLinks: [
+                    {
+                        github: "https://github.com/thejsgirl",
+                        linkedIn: "https://github.com/thejsgirl"
+                    }
+                ],
+                hobby: ["cricket", "badminton", "tenis"]},
             ];
         return <div>
-           <Friend friends ={ friendData}/>
+            <h1>Friends List</h1>
+           <Friend name="Aku"    socialLinks = {[
+                    {
+                        github: "https://github.com/thejsgirl",
+                        linkedIn: "https://github.com/thejsgirl"
+                    }
+                ] }hobby = {["cricket", "badminton", "tenis"]} />
+            <Friend name="Akriti"    socialLinks = {[
+                    {
+                        github: "https://github.com/thejsgirl",
+                        linkedIn: "https://github.com/thejsgirl"
+                    }
+                ] }hobby = {["cricket", "badminton", "tenis"]} />
 
         </div>
     }
